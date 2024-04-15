@@ -42,6 +42,7 @@ button {
   font-weight: 500;
   cursor: pointer;
   letter-spacing: 0.04em;
+  border: none;
 }
 
 address {
@@ -83,6 +84,11 @@ img {
 }
 
 /* btn */
+.btn {
+  border-radius: 4px;
+  padding: 19px 32px;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -145,10 +151,13 @@ img {
 .studio {
   background-color: var(--dark-color);
   text-align: center;
+  padding: 188px 0;
 }
 
 .studio-title {
   color: var(--white-color);
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 /* portfolio */
