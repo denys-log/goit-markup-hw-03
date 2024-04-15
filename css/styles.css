@@ -9,6 +9,8 @@
   --light-color: #f4f4fd;
   --overlay-color: #2e2f42;
   --white-color: #ffffff;
+  --intent-col: 24px;
+  --intent-row: 48px;
 }
 
 /* base */
@@ -169,7 +171,6 @@ img {
 
 .studio-title {
   color: var(--white-color);
-  max-width: 496px;
   margin: 0 auto 48px;
 }
 
@@ -180,11 +181,11 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  gap: var(--intent-col);
 }
 
 .advantages-item {
-  width: calc((100% - (3 * 24px)) / 4);
+  width: calc((100% - (3 * var(--intent-col))) / 4);
 }
 
 /* portfolio */
@@ -195,11 +196,12 @@ img {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  gap: var(--intent-col);
 }
 
 .portfolio-item {
-  width: calc((100% - (2 * 24px)) / 3);
+  border: 1px solid var(--accent-color);
+  width: calc((100% - (2 * var(--intent-col))) / 3);
 }
 
 /* team */
@@ -214,13 +216,13 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: var(--intent-col);
 }
 
 .team-item {
   background-color: var(--white-color);
   text-align: center;
-  width: calc((100% - (3 * 24px)) / 4);
+  width: calc((100% - (3 * var(--intent-col))) / 4);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -272,7 +274,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
-  gap: 24px;
+  gap: var(--intent-col);
 }
 
 .tabs-btn {
@@ -292,12 +294,12 @@ img {
 .portfolio-page-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+  row-gap: var(--intent-row);
+  column-gap: var(--intent-col);
 }
 
 .portfolio-page-item {
-  width: calc((100% - (2 * 24px)) / 3);
+  width: calc((100% - (2 * var(--intent-col))) / 3);
 }
 
 .portfolio-page-item-img {
