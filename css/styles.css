@@ -1,0 +1,170 @@
+:root {
+  --primary-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --overlay-color: #2e2f42;
+  --white-color: #ffffff;
+}
+
+/* base */
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: currentColor;
+  /* color: currentColor; */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--pressed-state-color);
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-color);
+}
+
+/* typography */
+.header-1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.header-2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.header-3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* btn */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* logo */
+.logo {
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.logo-accent {
+  color: var(--primary-color);
+}
+
+/* menu */
+.menu-link {
+  font-weight: 500;
+}
+
+/* studio */
+.studio {
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.studio-title {
+  color: var(--white-color);
+}
+
+/* portfolio */
+.portfolio-title {
+  text-align: center;
+}
+
+/* team */
+.team {
+  background-color: var(--light-color);
+}
+
+.team-title {
+  text-align: center;
+}
+
+.team-item {
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.footer .logo {
+  color: var(--light-color);
+}
+
+/* portfolio */
+.tabs {
+  text-align: center;
+}
+
+.tabs-btn {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.tabs-btn:hover,
+.tabs-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
+}
+
+/* helpers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
